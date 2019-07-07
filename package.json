@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "./node_modules/.bin/jsdoc -c jsdoc.json",
+    "linter": "./node_modules/.bin/eslint --init"
   },
   "author": "roohi",
   "license": "ISC",
@@ -14,5 +16,10 @@
     "pg": "^7.11.0",
     "pg-hstore": "^2.3.3",
     "sequelize": "^5.9.4"
+  },
+  "devDependencies": {
+    "better-docs": "^1.1.6",
+    "eslint": "^6.0.1",
+    "jsdoc": "^3.6.2"
   }
 }
